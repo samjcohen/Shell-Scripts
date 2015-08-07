@@ -13,4 +13,4 @@ if sudo port outdated > /dev/null; then
 else
     echo "No updates necessary" # No other action taken
 fi
-return 0
+exit 0
