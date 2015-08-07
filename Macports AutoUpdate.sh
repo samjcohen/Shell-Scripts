@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #  Macports AutoUpdate.sh
 #  Created by Sam Cohen on 8/6/15.
