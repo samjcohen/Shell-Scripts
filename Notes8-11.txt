@@ -1,0 +1,7 @@
+Notes 8/11
+
+Possoibe issue with line 8:
+	if sudo port outdated > /dev/null; then
+This conditional statement assumes there will be no output but if script is run and everything is up to date it will display:
+	No installed ports are outdated.
+
