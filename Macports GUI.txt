@@ -1,0 +1,17 @@
+(*Macport Updater GUI
+By Sam Cohen © 2016
+NOTE: paste this file into Apple Script Editor 
+and Set Paths to reflect actual shell script location*)
+set valuereturned to display dialog "Macports Updater Options" with 
+title "Macports Update" buttons {"Update Software", "Remove Old", 
+"Exit"} default button {"Update Software"}
+set BUTTON_Returned to button returned of valuereturned #Need to jump 
+between variables
+if BUTTON_Returned = "Update Software" then do shell script 
+"/Developer/Macports_GUI/MacportsAutoUpdate.sh" with administrator 
+privileges #password propt will follow
+if BUTTON_Returned = "Remove Old" then do shell script 
+"/Developer/Macports_GUI/Remove_Old.sh" with administrator privileges
+if BUTTON_Returned = "Exit" then return 0
+display dialog "Done!" with title "Macports Update" buttons {"OK"} 
+default button {"OK"}
