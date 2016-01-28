@@ -10,6 +10,6 @@ sudo port upgrade outdated
 echo "All software up-to-date"
 sleep 2
 echo "Removing old ports"
-sudo port uninstall inactive > /dev/null # If lots of compiling nessessary, you may have to reenter admin passsword here
+sudo port uninstall inactive > /dev/null # If lots of compiling necessary, you may have to reenter admin password here
 echo "Done!"
 exit 0
